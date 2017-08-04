@@ -1,0 +1,60 @@
+.container {
+	background-color: #666666;
+	background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-table {
+	width: 50vw;
+	max-width: 900px;
+	min-width: 400px;
+	min-height: 300px;
+	background: #fff;
+	border: 2px solid #eee;
+	border-radius: 4px;
+}
+
+.table-title {
+	padding: 10px;
+	font-size: 22px;
+	color: #333;
+	display: block;
+	background: #e4e2e3;
+}
+.table-content {
+	padding: 5px 10px 10px 10px;
+}
+.table-footer {
+	color: #c0c0c0;
+	font-size: 14px;
+	text-align: center;
+	padding: 15px 10px;
+}
+.form-group {
+	margin: 5px 0px;
+}
+.form-group .text {
+	width: 100%;
+}
+
+.top-menu {
+	padding:10px;
+	margin:0px;
+	list-style: none;
+	display: block;
+	background: #e4e2e3;
+}
+.top-menu li {
+	display: inline-block;
+}
+.top-menu li > a {
+	text-decoration: none;
+}
+.table-content {
+	overflow: auto;
+	max-height: 300px;
+}

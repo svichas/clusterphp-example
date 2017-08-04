@@ -1,0 +1,35 @@
+{{ var $title = "Hoster Dashboard" }}
+{{ require 'Base/header.html' }}
+
+	<div class="container">
+
+		<div class="main-table">
+			<div class="table-header">{{ require 'Base/tablemenu.html' }}</div>
+
+			<div class="table-content">
+				<table class="host-list table table-striped-odd">
+
+				<tbody>
+				{{ for $host in $hosts }}
+					<tr>
+						<td><a href="{{ link '/host/' . $host['host_title'] }}" target="_blank">{{ echo $host['host_title'] }}</a></td>
+						<td style="width:20%;text-align: center;"><a href="{{ link '/host/edit/' . $host['host_title'] }}">Edit</a> <a href="{{ link '/host/delete/' . $host['host_title'] }}">Delete</a></td>
+					</tr>
+				{{ endfor }}
+
+				{{ if count($hosts) == 0 }}
+					<tr><td><h3 style="color:#c0c0c0;text-align: center;padding:20px;">No hosts found!</h3></td></tr>
+				{{ endif}}						
+				</tbody>
+	
+				</table>
+			</div>
+
+			<div class="table-footer">
+				ClusterPHP - MIT License
+			</div>
+		</div>
+
+	</div>
+
+{{ require 'Base/footer.html' }}

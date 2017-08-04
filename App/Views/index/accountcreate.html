@@ -1,0 +1,24 @@
+{{ var $title = "Hoster Index" }}
+{{ require 'Base/header.html' }}
+
+	<div class="container">
+
+		<div class="main-table">
+			<div class="table-title">Hoster Create Account</div>
+
+
+			<div class="table-content">
+				{{require 'Base/showmessages.html'}}
+				
+				{{ echo $form }}
+
+				<a href="{{ link '/index' }}">Back to login</a>
+			</div>
+			<div class="table-footer">
+				ClusterPHP - MIT License
+			</div>
+		</div>
+
+	</div>
+
+{{ require 'Base/footer.html' }}
